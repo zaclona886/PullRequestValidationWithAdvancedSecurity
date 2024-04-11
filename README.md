@@ -28,7 +28,7 @@ You need to install `npm install -g tfx-cli` to be able to package extension.
 You need to set your **OrganizationName** in `PullRequestValidationWithAdSec/PRAnalysis.ps1` to configure the task to work properly with your organization.
 
 #### Attributes to change in Manifest Files
-For `task.json` & `vss-extension.json`, "id", "author", "name" needs to be changed for yours. You can also change `img/icon.png` (Size 220x220),
+For `task.json` & `vss-extension.json`, "id", "author", "name" needs to be changed for yours. You can also change `img/icon.png` (Size 220x220).
 
 ## Release and Deploy
 ### Manual
