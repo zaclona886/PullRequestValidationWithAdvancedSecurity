@@ -29,22 +29,20 @@ For `task.json` & `vss-extension.json`, "id", "author", "name". You can also cha
 
 ## Build
 
+## Release and Deploy
+### Manual
 ### Versioning
-If changes are made to the `PRAnalysis.ps1` script, remember to update the version in `task.json`.
+1. **Update Version**: If changes are made to the `PRAnalysis.ps1` script, remember to update the version in `task.json`.
 To update the extension on the Marketplace, you must also update the version in the `vss-extenstion.json` file.
 It's a good practice to synchronize the version numbers in both `task.json` and `vss-extension.json`.
 
-### Build 
-To build and package the extension, use the command below. This generates a `.vsix` file which is used for distribution.
+2. **Build**: To build and package the extension, use the command below. This generates a `.vsix` file which is used for distribution.
 
    ```powershell
    tfx extension create --manifest-globs vss-extension.json
    ```
-
-
-## Release and Deploy
-### Manual
-Once the `.vsix` file is created, upload/update the extension on the **[Microsoft Extension Marketplace](https://marketplace.visualstudio.com/)**. Then, share it with your organization and install it.
+   
+3. Once the `.vsix` file is created, upload/update the extension on the **[Microsoft Extension Marketplace](https://marketplace.visualstudio.com/)**. Then, share it with your organization and install it.
 
 ### Automated
 Use **[Azure DevOps Extension Tasks](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-developer-tools-build-tasks)** to automate release and deploy inside a Azure DevOps.
