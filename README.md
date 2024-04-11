@@ -39,13 +39,15 @@ For `task.json` & `vss-extension.json`, "id", "author", "name" needs to be chang
 To update the extension on the Marketplace, you must also update the version in the `vss-extenstion.json` file.
 It's a good practice to synchronize the version numbers in both `task.json` and `vss-extension.json`.
 
-2. **Build**: To build and package the extension, use the command below. This generates a `.vsix` file which is used for distribution.
+2. **Package**: To build and package the extension, use the command below. This generates a `.vsix` file which is used for distribution.
 
    ```powershell
    tfx extension create --manifest-globs vss-extension.json
    ```
    
-3. **Install**: Once the `.vsix` file is created, upload/update the extension on the **[Microsoft Extension Marketplace](https://marketplace.visualstudio.com/)**. Then, share it with your organization and install it.
+2. **Upload to Microsoft Marketplace**: After packaging, upload the `.vsix` file to the **[Microsoft Extension Marketplace](https://marketplace.visualstudio.com/)** through the Azure DevOps portal.
+
+3. **Share and install**: Share it with your organization and install it.
 
 ### Automated
 Use **[Azure DevOps Extension Tasks](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-developer-tools-build-tasks)** for automated release and deploy if code is stored inside a Azure DevOps.
