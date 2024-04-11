@@ -20,14 +20,12 @@ The foundation of this Azure Pipeline Task, which utilizes PowerShell, is based 
 4. **Set Up Extension Manifest**: At the root level, create a `vss-extension.json` file. This file also needs to follow a specific structure for the extension to be correctly packaged and deployed.
 
 ### Required
-You need to set you **OrganizationName** in `PullRequestValidationWithAdSec/PRAnalysis.ps1` to configure the task to work properly with your organization.
+You need to set your **OrganizationName** in `PullRequestValidationWithAdSec/PRAnalysis.ps1` to configure the task to work properly with your organization.
 #### Instalation
 You need to install `npm install -g tfx-cli` to be able to package extension.
 
 #### Attributes to change in Manifest Files
 For `task.json` & `vss-extension.json`, "id", "author", "name". You can also change `img/icon.png` (Size 220x220),
-
-## Build
 
 ## Release and Deploy
 ### Manual
@@ -42,7 +40,7 @@ It's a good practice to synchronize the version numbers in both `task.json` and 
    tfx extension create --manifest-globs vss-extension.json
    ```
    
-3. Once the `.vsix` file is created, upload/update the extension on the **[Microsoft Extension Marketplace](https://marketplace.visualstudio.com/)**. Then, share it with your organization and install it.
+3. **Install**: Once the `.vsix` file is created, upload/update the extension on the **[Microsoft Extension Marketplace](https://marketplace.visualstudio.com/)**. Then, share it with your organization and install it.
 
 ### Automated
 Use **[Azure DevOps Extension Tasks](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-developer-tools-build-tasks)** to automate release and deploy inside a Azure DevOps.
