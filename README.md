@@ -48,7 +48,7 @@ It's a good practice to synchronize the version numbers in both `task.json` and 
 3. **Install**: Once the `.vsix` file is created, upload/update the extension on the **[Microsoft Extension Marketplace](https://marketplace.visualstudio.com/)**. Then, share it with your organization and install it.
 
 ### Automated
-Use **[Azure DevOps Extension Tasks](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-developer-tools-build-tasks)** to automate release and deploy inside a Azure DevOps.
+Use **[Azure DevOps Extension Tasks](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-developer-tools-build-tasks)** for automated release and deploy if code is stored inside a Azure DevOps.
 
 ## How to Use
 To allow a pipeline to contribute to a Pull Request, the Build Service requires specific permissions:
