@@ -22,7 +22,10 @@ The foundation of this Azure Pipeline Task, which utilizes PowerShell, is based 
 ## Instalation Instructions & Required Changes
 
 ### Instalation
-You need to install `npm install -g tfx-cli` to be able to package extension.
+You need to install `TFX` to be able to package extension.
+   ```powershell
+   npm install -g tfx-cli
+   ```
 
 ### Required Changes
 You need to set your **OrganizationName** in `PullRequestValidationWithAdSec/PRAnalysis.ps1` to configure the task to work properly with your organization.
