@@ -29,8 +29,7 @@ For `task.json` & `vss-extension.json`, "id", "author", "name". You can also cha
 
 ## Release and Deploy
 ### Manual
-### Versioning
-1. **Update Version**: If changes are made to the `PRAnalysis.ps1` script, remember to update the version in `task.json`.
+1. **Versioning**: If changes are made to the `PRAnalysis.ps1` script, remember to update the version in `task.json`.
 To update the extension on the Marketplace, you must also update the version in the `vss-extenstion.json` file.
 It's a good practice to synchronize the version numbers in both `task.json` and `vss-extension.json`.
 
