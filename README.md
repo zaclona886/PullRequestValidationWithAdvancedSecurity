@@ -19,10 +19,13 @@ The foundation of this Azure Pipeline Task, which utilizes PowerShell, is based 
 
 4. **Set Up Extension Manifest**: At the root level, create a `vss-extension.json` file. This file also needs to follow a specific structure for the extension to be correctly packaged and deployed.
 
-### Required
-You need to set your **OrganizationName** in `PullRequestValidationWithAdSec/PRAnalysis.ps1` to configure the task to work properly with your organization.
-#### Instalation
+## Instalation Instructions & Required Changes
+
+### Instalation
 You need to install `npm install -g tfx-cli` to be able to package extension.
+
+### Required Changes
+You need to set your **OrganizationName** in `PullRequestValidationWithAdSec/PRAnalysis.ps1` to configure the task to work properly with your organization.
 
 #### Attributes to change in Manifest Files
 For `task.json` & `vss-extension.json`, "id", "author", "name". You can also change `img/icon.png` (Size 220x220),
