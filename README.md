@@ -22,11 +22,12 @@ The foundation of this Azure Pipeline Task, which utilizes PowerShell, is based 
 ### Required
 You need to set you **OrganizationName** in `PullRequestValidationWithAdSec/PRAnalysis.ps1` to configure the task to work properly with your organization.
 
-## Build and Release
-### Attributes to change in Manifest Files
+#### Attributes to change in Manifest Files
 For `task.json` & `vss-extension.json`, "id", "author", "name". You can also change `img/icon.png` (Size 220x220),
 
-#### Versioning
+## Build
+
+### Versioning
 If changes are made to the `PRAnalysis.ps1` script, remember to update the version in `task.json`.
 To update the extension on the Marketplace, you must also update the version in the `vss-extenstion.json` file.
 It's a good practice to synchronize the version numbers in both `task.json` and `vss-extension.json`.
