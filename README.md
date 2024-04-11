@@ -42,7 +42,7 @@ To build and package the extension, use the command below. This generates a `.vs
    ```
 
 
-## Deployment
+## Release and Deploy
 ### Manual
 Once the `.vsix` file is created, upload/update the extension on the **[Microsoft Extension Marketplace](https://marketplace.visualstudio.com/)**. Then, share it with your organization and install it.
 
