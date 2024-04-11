@@ -1,0 +1,48 @@
+{
+    "id": "b9c1b7ba-2465-4539-8694-114ccf93059f",
+    "name": "PullRequestValidationWithAdSec",
+    "friendlyName": "PullRequestValidationWithAdvancedSecurity",
+    "description": "Make a Pull Request Branch vulnerability validation/analysis based on Advanced Security scan results.",
+    "author": "PavolPetrovic",
+    "helpMarkDown": "Make a Pull Request Branch vulnerability validation/analysis based on Advanced Security scan results.",
+    "category": "Utility",
+    "visibility": [
+      "Build",
+      "Release"
+    ],
+    "demands": [],
+    "version": {
+      "Major": "1",
+      "Minor": "0",
+      "Patch": "1"
+    },
+    "minimumAgentVersion": "1.95.0",
+    "instanceNameFormat": "PullRequestValidationWithAdSec $(message)",
+    "inputs": [
+      {
+        "name": "EnableCodeAlertsAnalysis",
+        "type": "boolean",
+        "label": "Enable Code Alerts Analysis",
+        "helpMarkDown": "Set to True if you want to enable Code Alerts Analysis.",
+        "defaultValue": "true",
+        "required": false
+        
+      },
+      {
+        "name": "EnableDependencyAlertsAnalysis",
+        "type": "boolean",
+        "label": "Enable Dependency Alerts Analysis",
+        "helpMarkDown": "Set to True if you want to enable Dependency Alerts Analysis.",
+        "defaultValue": "true",
+        "required": false      
+      }
+    ],
+    
+    "execution": {
+      "PowerShell3": {
+        "target": "PRAnalysis.ps1",
+        "platforms": ["windows"],
+        "workingDirectory": "$(currentDirectory)"
+      }
+    }
+  }

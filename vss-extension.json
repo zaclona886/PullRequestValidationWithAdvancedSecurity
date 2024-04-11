@@ -1,0 +1,40 @@
+{
+    "manifestVersion": 1,
+    "id": "PullRequestValidationWithAdSec",
+    "name": "Pull Request Validation with Advanced Security",
+    "version": "1.0.1",
+    "publisher": "PavolPetrovic",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],    
+    "description": "Make a Pull Request Branch vulnerability validation/analysis based on Advanced Security scan results.",
+    "categories": [
+        "Azure Pipelines"
+    ],
+    "icons": {
+        "default": "img/icon.png"        
+    },
+    "files": [
+        {
+            "path": "PullRequestValidationWithAdSec"
+        },
+        {
+            "path": "img", 
+            "addressable": true
+        }
+    ],
+    "contributions": [
+        {
+            "id": "PullRequestValidationWithAdSec",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "PullRequestValidationWithAdSec"
+            }
+        }
+    ]
+}
